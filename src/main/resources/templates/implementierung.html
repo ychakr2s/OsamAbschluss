@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <title>Implementierung</title>
+</head>
+<body>
+
+<!--  Start Upper Bar -->
+<!--<div class="upper-bar">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-sm">-->
+<!--                <i class="fa fa-envelope"></i> <span>Osama Email</span>-->
+<!--            </div>-->
+<!--            <div class="col-sm text-right bs">-->
+<!--                Bachelorarbeit im Studiengang Informatik-->
+<!--            </div>-->
+<!--            <div class="col-sm">-->
+<!--                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- End Upper Bar -->
+
+<!-- Start Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <span>Graph </span><span>Coloring</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIVimple">
+                <li class="nav-impl">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-impl">
+                    <a class="nav-link" id="impllement" href="#impl">Implementierung der Algorithmen</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Nav Bar -->
+
+<!-- Start Slider -->
+<div class="slider">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <h2><span>Implementierung von Algorithmen</span>
+            </h2>
+            <div class="overlay"></div>
+            <div class="carousel-item carousel-twwo active">
+            </div>
+            <div class="carousel-item carousel-thhree">
+            </div>
+            <div class="carousel-item carousel-foour">
+            </div>
+        </div>
+
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+
+    </div>
+</div>
+<!-- End Slider -->
+
+<!--Start Algorithm Implementation-->
+<div class="startBody">
+
+    <div class="implementierung">
+        <div class="container">
+            <div class="myHeading">
+                <h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>
+            </div>
+
+            <div class="anweisung">
+                <h3>3 Schritte für die Implementierung
+                </h3>
+                <p>Um die Algorithmen an dem Graphen implementieren zu können, müssen die folgenden drei Schritten
+                    gefolgt werden:</p>
+                <ul>
+                    <li>Eine Graph-Datei hochladen. Der Graph kann ein DIMACS-Graph sein oder ein selbst
+                        generieter Graph. <br/>Die Graph-Datei muss wie eine von diesen Fotos aussehen.<br/>
+                        Beachten Sie, dass die maximal zulässige Größe des Graphen ist 1048.576 kb.
+                    </li>
+                    <!--                    <div class="row">-->
+                    <!--                        <div class="column">-->
+                    <!--                            <img src="images/Graph_Impl2.PNG" height="550" width="500"/>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="column">-->
+                    <!--                            <img src="images/Graph_Impl1.PNG" height="550" width="500"/>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <li>mindestens ein Algorithmus muss ausgewählt werden.</li>
+                    <li>den Submit Button Klicken</li>
+                </ul>
+            </div>
+            <div class="myHeading">
+                <!--<h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>-->
+                <h3>Implementierung der exakten und heuristischen Algorithmen / Das Ergebnis der
+                    Färbungsalgorithmen</h3>
+            </div>
+
+            <div class="uploadContainer">
+                <div class="upload-header">
+                    <h3>Graph Hochladen</h3>
+                </div>
+                <div class="upload-content">
+                    <div class="single-upload">
+                        <h3>File Hochladen</h3>
+                        <form method="POST" action="/upload" target="_blank" enctype="multipart/form-data">
+                            <input type="file" name="file" id="myGraphSubmit" required=""/>
+                            <button type="submit" class="primary submit-btn">Hochladen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submitAlgor">
+                <div class="multiselect">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option>Algorithmus auswählen</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+                    <form class="CheckBox" action="editCustomer" method="post">
+                        <div id="checkboxes">
+                            <!--                            <select ></select>-->
+                            <option class="divide">Effiziente Algorithmen</option>
+                            <!--                            <label>-->
+                            <!--                                <input type="checkbox" class="chk" value="Backtracking"/>effizienter Algorithmus</label>-->
+                            <label>
+                                <input type="checkbox" class="chk" value="EffizienterAlgorithmus"/>Effizienter
+                                Algorithmus
+                            </label>
+
+                            <option class="divide">Naive Algorithmen</option>
+                            <!-- <br/> -->
+                            <label>
+                                <input type="checkbox" class="chk" value="NaiveAlgorithmus1"/>Naive Algorithmus
+                                1</label>
+                            <label>
+                                <input type="checkbox" class="chk" value="NaiveAlgorithmus2"/>Naive Algorithmus
+                                2</label>
+                            <!--                            <label>-->
+                            <!--                                <input type="checkbox" class="chk" value="DSATUR"/>DSATUR Algorithmus</label>-->
+                            <!--                            <label>-->
+                            <!--                                <input type="checkbox" class="chk" value="Recursive Largest First"/>-->
+                            <!--                                Recursive Largest First-->
+                            <!--                            </label>-->
+                            <!--                            <label>-->
+                            <!--                                <input type="checkbox" class="chk" value="Welsh Powell"/> Welsh Powell-->
+                            <!--                            </label>-->
+                            <!--                            <label>-->
+                            <!--                                <input type="checkbox" class="chk" value="Tiefensuche"/>Tiefensuche</label>-->
+                            <!--                            <label>-->
+                            <!--                                <input type="checkbox" class="chk" value="Breitensuche"/>Breitensuche</label>-->
+                        </div>
+                    </form>
+                </div>
+                <button class="submitAlgorithm">Submit</button>
+            </div>
+
+            <div id="showmyjson">
+            </div>
+
+            <div class="anzeigen">
+                <div class="upload-header">
+                    <h4>Graph Anzeigen</h4>
+                </div>
+                <button id="graphAnzeigen">Anzeigen</button>
+            </div>
+
+            <div id="sigmaContainerParent" style="display: none;">
+                <div id="sigmaContainer">
+                </div>
+            </div>
+
+            <!--End Algorithm Implementation-->
+
+        </div>
+    </div>
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/impressum">Imprint</a></li>
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Osama El Arabi.</p>
+        </div>
+    </footer>
+</div>
+<!--  End IMPLEMENTIERUNG -->
+
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/build/sigma.min.js"></script>
+<script src="js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
+<script src="js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/worker.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    var puzzle;
+    var selectedTile;
+    var matrix = [];
+    $(document).ready(function () {
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+//         init();
+//         $("#newGame").click(function () {
+//             init();
+//         });
+
+        $("#grid").fadeIn(900);
+
+        // $("#myOwn").click(function () {
+        //     initMyOwn();
+        // });
+
+        $("#graphAnzeigen").click(function () {
+            // myFunction();
+            graphzeigen();
+        });
+
+        $('.submitAlgorithm').click(function () {
+            submitSelectedAlgorithms();
+        });
+
+        // $("#finished").click(function () {
+        //     readTableToSend();
+        //     sendArrayToJava();
+        // });
+        console.log("Salam i am from Ready jQuery: ", matrix);
+    });
+
+    function graphzeigen() {
+        $.ajax({
+            contentType: "application/json",
+            type: "GET",
+            url: "/graphZeigen",
+            success: function (data) {
+                myFunction();
+
+                if (isJson(data)) {
+                    // Initialise sigma:
+                    let myObject = JSON.parse(data);
+                    console.log("my Object: "+myObject);
+                    var edge = myObject.e;
+                    console.log("MY edges: "+edge);
+
+                    s = new sigma(
+                        {
+                            renderer: {
+                                container: document.getElementById("sigmaContainer"),
+                                type: 'canvas'
+                            },
+                            settings: {
+                                edgeLabelSize: 'proportional',
+                                minArrowSize: 10
+                            }
+                        }
+                    );
+
+                    var graph = {
+                        nodes: [],
+                        edges: []
+                    };
+                    console.log("Vertices: " + myObject.V);
+                    for (i = 0; i < myObject.V; i++) {
+                        graph.nodes.push({
+                            id: i,
+                            label: 'Node ' + i,
+                            x: Math.random(),
+                            y: Math.random(),
+                            size: 1,
+                            color: '#ee59cb'
+                        });
+                    }
+                    //
+                    var idd = 0;
+                    for (j = 0; j < edge.length; j++) {
+                        for (i = 0; i < edge[j].length; i++) {
+                            graph.edges.push({
+                                id: idd,
+                                // label: 'Edge ' +idd,
+                                source: '' + j,
+                                target: '' + edge[j][i],
+                                color: '#808080',
+                                type: 'curvedArrow',
+                            });
+                            // console.log(edge[j][i]);
+                            ++idd;
+                        }
+                    }
+                    console.log(graph.edges);
+                    // // load the graph
+                    s.graph.read(graph);
+                    // draw the graph
+                    s.refresh();
+                    // // launch force-atlas for 5sec
+                    // s.startForceAtlas2();
+                    // window.setTimeout(function () {
+                    //     s.killForceAtlas2()
+                    // }, 100);
+                } else
+                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.log('error while post to java');
+            }
+        });
+    }
+
+    // function init() {
+    //     puzzle = new generateSudoku();
+    //
+    //     for (var i = 0; i < 9; i++) {
+    //         for (var j = 0; j < 9; j++) {
+    //             var tile = document.getElementById("t" + i + "x" + j);
+    //             if (puzzle.getTileNumber(i, j) === 0) {
+    //                 tile.className = "cell";
+    //                 tile.value = "";
+    //                 tile.style.backgroundColor = "#FFFFFF";
+    //                 tile.disabled = true;
+    //                 tile.onclick = tOnClick;
+    //             } else {
+    //                 tile.style.backgroundColor = "#33FFD5";
+    //                 tile.className = "cell";
+    //                 tile.value = puzzle.getTileNumber(i, j);
+    //                 tile.disabled = true;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // function ownInput() {
+    //     puzzle = new generateMyOwn();
+    //
+    //     for (var i = 0; i < 9; i++) {
+    //         for (var j = 0; j < 9; j++) {
+    //             var tile = document.getElementById("t" + i + "x" + j);
+    //             if (puzzle.getTileNumber(i, j) === 0) {
+    //                 tile.className = "emptyCell";
+    //                 tile.value = "";
+    //                 tile.style.backgroundColor = "#FFFFFF";
+    //                 tile.disabled = false;
+    //                 tile.onclick = tOnClick;
+    //             } else {
+    //                 tile.className = "cell";
+    //                 tile.value = puzzle.getTileNumber(i, j);
+    //             }
+    //         }
+    //     }
+    // }
+
+    /*
+    * This method should serve to read and fill the Matrix with the inputed value from HTML
+    */
+    // function readTableToSend() {
+    //     for (let i = 0; i < 9; i++) {
+    //         matrix[i] = [];
+    //         for (let j = 0; j < 9; j++) {
+    //             let tile = document.getElementById("t" + i + "x" + j);
+    //             if (tile === "") {
+    //                 matrix[i][j] = 0;
+    //             } else {
+    //                 matrix[i][j] = tile.value;
+    //             }
+    //         }
+    //     }
+    // }
+
+    /*
+     * This Method generates a table which read from java and print the results in Browser
+     */
+    // function printSudoku(array) {
+    //     let count = 0;
+    //     for (let i = 0; i < 9; i++) {
+    //         for (let j = 0; j < 9; j++) {
+    //             let tile = document.getElementById("t" + i + "x" + j);
+    //             if (tile.value === "") {
+    //
+    //                 tile.style.backgroundColor = "#FFFFFF";
+    //                 tile.disabled = true;
+    //                 tile.value = array[count];
+    //             } else {
+    //                 tile.style.backgroundColor = "#33ffd5";
+    //                 tile.disabled = true;
+    //             }
+    //             count++;
+    //         }
+    //     }
+    // }
+
+    // function tOnClick() {
+    //     if (selectedTile == null) {
+    //         selectedTile = this;
+    //         selectedTile.className = "emptyCell selected";
+    //     } else {
+    //         deselect();
+    //     }
+    // }
+
+
+    // function deselect() {
+    //     selectedTile.className = "emptyCell";
+    //     selectedTile = null;
+    // }
+
+    // function initMyOwn() {
+    //     ownInput();
+    // }
+
+    /*
+    * This method convert a Matrix, which is self entered or generated with the Button "give me another" to Array in
+    * order to send it to the java server to solve the Problem Sudoku.
+    */
+    // function convertMarixToArray(matrix) {
+    //     let myArray = Array(81);
+    //     let count = 0;
+    //     for (let i = 0; i < 9; i++) {
+    //         for (let j = 0; j < 9; j++) {
+    //             myArray[count] = matrix[i][j];
+    //             count++;
+    //         }
+    //     }
+    //     return myArray;
+    // }
+
+    /*
+    * This Methode send an array to java using ajax and get the response as Array.
+    * This response will be printed using Method generate_Table()
+    */
+    // function sendArrayToJava() {
+    //     // console.log("i am the matrix " + matrix);
+    //     if (isValid(matrix)) {
+    //         let dataArrayToSend = convertMarixToArray(matrix);
+    //
+    //         if (!isSolved(dataArrayToSend)) {
+    //             $.ajax({
+    //                 contentType: "application/json",
+    //                 type: "POST",
+    //                 data: JSON.stringify(dataArrayToSend),
+    //                 url: "/appUrl",
+    //                 success: function (data) {
+    //                     printSudoku(data)
+    //                 },
+    //                 error: function (jqXHR, textStatus, errorThrown) {
+    //                     console.log('error while post');
+    //                 }
+    //             });
+    //         }
+    //     } else {
+    //         Swal.fire({
+    //             title: "Ein­ga­be­feh­ler",
+    //             text: "Halten Sie bitte die Regeln des Sudoku Spiels ein!" +
+    //                 "Es darf nur die Zahlen 1 bis 9 eingegeben werden",
+    //             type: "warning"
+    //         })
+    //     }
+    // }
+
+    // function isSolved(dataArrayToSend) {
+    //     for (var i = 0; i < 81; i++) {
+    //         if (dataArrayToSend[i] === '') {
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+    //]]>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Implementierung</title>
+</head>
+
+<body>
+<!--  Start Upper Bar -->
+<div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa fa-envelope"></i> <span>yassine.chakri@smail.inf.h-brs.de</span>
+            </div>
+            <div class="col-sm text-right bs">
+                Bachelorarbeit im Studiengang Informatik
+            </div>
+            <div class="col-sm">
+                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Upper Bar -->
+
+<!-- Start Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <span>Graph </span><span>Coloring</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIVimple">
+                <li class="nav-impl">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-impl">
+                    <a class="nav-link" id="impllement" href="/implementierung">Implementierung</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Start References -->
+<div class="startBody">
+
+    <div class="implementierung">
+        <div class="container">
+            <div class="myHeading">
+                <h2 class="implemen" id="impl"> References</h2>
+            </div>
+            <ul>
+                <li>
+                    Lewis, R.M.R. 2016. A Guide to Graph Colouring. Switzerland : Springer International Publishing AG,
+                    2016.
+                </li>
+                <li>
+                    Turau, Volker und Weyer, Christoph. 2015. Algorithmische Graphentheorie. s.l. : De Gruyter, 2015.
+                </li>
+                <li> Boyini, Karthikeya. 2014. Tutorialspoint. www.tutorialspoint.com. [Online] 12. Juni 2014.
+                    https://www.tutorialspoint.com/M-Coloring-Problem.
+                </li>
+                <li>
+                    Brélaz, Daniel. Scinapse. New Methods to Color the Vertices of a Graph. [Online]
+                    https://scinapse.io/papers/2167036627.
+                </li>
+                <li>
+                    Cohn, Mike. 2005. Agile estimating and planning. s.l. : Pearson Prentice Hall: Upper Saddle River,
+                    NJ, 2005.
+                </li>
+                <li>
+                    Cormen, Thomas H., Leiserson, Charles E. und Ronald.
+                    http://staff.ustc.edu.cn/~csli/graduate/algorithms/book6/chap23.htm. Representations of graphs.
+                    [Online]
+                </li>
+                <li>
+                    DIMACS. DIMACS. Graph Coloring Instances. [Online] DIMACS.
+                    https://mat.tepper.cmu.edu/COLOR/instances.html.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--End References-->
+
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/impressum">Imprint</a></li>
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            'use strict';
+            // HEADER: Adjust Slider Height
+            var windowHeigh = $(window).height();
+
+            var upperH = $('.upper-bar').innerHeight();
+            var nav = $('.navbar').innerHeight();
+            var navH = $('footer').innerHeight();
+
+            $('.implementierung').height(windowHeigh - (navH + nav + upperH));
+        });
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+    });
+
+    //]]>
+
+</script>
+<!--noch weiter-->
+</body>
+</html>

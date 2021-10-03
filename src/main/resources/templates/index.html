@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <title>Abschussarbeit Informatik</title>
+</head>
+<body>
+<!--  Start Upper Bar -->
+<div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa fa-envelope"></i> <span>Osam Email</span>
+            </div>
+            <div class="col-sm text-right bs">
+                Bachelorarbeit im Studiengang Informatik
+            </div>
+            <div class="col-sm">
+                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Upper Bar -->
+<!-- Start Nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <span>Graph </span><span>Coloring</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIV">
+                <li class="nav-item">
+                    <a class="nav-link einfuer" href="#">Einführung </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link anwendun" href="#">Anwendungen</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Algorithmen <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item exakte" href="#">Effiziente Algorithmen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item heuristische" href="#">Naive Algorithmen</a>
+                    </div>
+                </li>
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link observat" href="#">Observation</a>-->
+                <!--</li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="/implementierung">Implementierung</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Nav Bar  -->
+
+<!--  Start Slider -->
+<div class="slider">
+    <div id="main-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <h2>Bachelorarbeit <br/> <span>Implementierung und Evaluation von <span id="firstt">
+            Färbungsalgorithmen</span></span>
+            </h2>
+            <div class="overlay"></div>
+            <div class="carousel-item carousel-one active">
+            </div>
+            <div class="carousel-item carousel-two">
+            </div>
+            <div class="carousel-item carousel-three">
+            </div>
+            <div class="carousel-item carousel-four">
+            </div>
+        </div>
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+            <li data-target="#main-slider" data-slide-to="3"></li>
+        </ol>
+
+    </div>
+</div>
+<!--  End Slider  -->
+<!--  Start Einfuerung  -->
+<div class="startBody">
+    <div class="einfuerung">
+        <div class="container">
+            <div class="myHeading this">
+                <h1>Graph </h1>
+                <h2 class="einf">Einführung</h2>
+                <p align="justify">Einen Graph kann man sich in der Mathematik als eine Menge von Objekten vorstellen,
+                    bei denen einige Objektpaare durch Verknüpfungen verbunden sind. Die miteinander verbundenen Objekte
+                    werden üblicherweise Knoten genannt, wobei die Verknüpfungen Knotenpaare verbinden, die als Kanten
+                    bezeichnet werden. Mithilfe von Graphen können überraschend viele Problembereiche modelliert werden,
+                    darunter soziale Netzwerke, Chemie, Terminplanung, Paketzustellung, Satellitennavigation,
+                    Elektrotechnik und Computervernetzung.</p>
+
+            </div>
+        </div>
+    </div>
+    <!--  End Einfuerung  -->
+    <!-- Start Anwendung  -->
+    <div class="anwendung">
+        <div class="container">
+            <div class="myHeading this">
+                <h2 class="anwend">Anwendungen</h2>
+                <h3>Beispiel 1</h3>
+
+                <h3>Beispiel 2</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Anwendung  -->
+    <!--  Start Algorithmen  -->
+    <div class="algorithmen">
+        <div class="container">
+            <div class="myHeading">
+                <h2>Algorithmen</h2>
+
+                <h3 class="exakt">Effiziente Algorithmen</h3>
+
+                <h4>effizienter Algorithmus</h4>
+                <p align="justify">Die erste Nebenbedingung besagt, dass jede Ecke genau eine Farbe zugeordnet bekommt.
+                    Die nächste Bedingung verknüpft die beiden Arten von Variablen, eine Ecke
+                    kann nur dann mit Farbe k gefärbt werden, falls Yk = 1 gilt. Die dritte Bedingung
+                    stellt sicher, dass benachbarte Ecken verschiedene Farben bekommen. Zum Schluss
+                    wird sichergestellt, dass die Variablen nur die Werte 0 und 1 annehmen können.</p>
+                <h3 class="heuristi">Naive Algorithmen</h3>
+                <p align="justify">Eine heuristische Technik ist ein Ansatz zur Problemlösung oder Selbstfindung, bei
+                    dem eine praktische Methode angewendet wird, die nicht garantiert, optimal und perfekt zu sein,
+                    sondern ausreicht, um ein unmittelbares Ziel zu erreichen. Ist es unmöglich oder unpraktisch, eine
+                    optimale Lösung zu finden, so können heuristische Methoden eingesetzt werden, um die Suche nach
+                    einer zufriedenstellenden Lösung zu beschleunigen.</p>
+
+                <h4>Naive Algorithmus 1</h4>
+                <p align="justify">Der GREEDY-Algorithmus ist einer der einfachsten, aber grundlegendsten heuristischen
+                    Algorithmen für das Färbungsproblem. Der Algorithmus nimmt die Knoten nacheinander in einer
+                    (möglicherweise willkürlichen) Reihenfolge und weist jedem Knoten seine erste verfügbare Farbe zu.
+                    Da es sich um einen heuristischen Algorithmus handelt, sind die von ihm erzeugten Lösungen
+                    möglicherweise nicht optimal.</p>
+
+                <h4>Naive Algorithmus 2</h4>
+                <p align="justify">Der Largest First (LF) Algorithmus ist einer der ältesten und einfachsten Algorithmen
+                    zum sequentiellen Färbungsproblem. Die Methode basiert auf der Beobachtung, dass Knoten mit geringem
+                    Grad eine flexiblere Farbwahl ermöglichen. Infolgedessen müssen die Knoten mit hohem Grad zuerst
+                    eingefärbt werden. Die LF-Methode kann so implementiert werden, dass sie in O (m + n) Zeit
+                    läuft.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="bd-footer text-muted">
+        <div class="container">
+            <ul class="bd-footer-links">
+                <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/references">References</a></li>
+                <li><a href="/impressum">Imprint</a></li>
+
+            </ul>
+            <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
+        </div>
+    </footer>
+</div>
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+        var matrix = [];
+
+        $("#grid").fadeIn(900);
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav-item");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
+        console.log("Salam i am from Ready jQuery: ", matrix);
+    });
+
+    //]]>
+
+</script>
+<!--noch weiter-->
+</body>
+</html>

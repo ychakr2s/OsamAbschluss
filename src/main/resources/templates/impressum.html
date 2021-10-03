@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Implementierung</title>
+</head>
+
+<body>
+<!--  Start Upper Bar -->
+<div class="upper-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <i class="fa fa-envelope"></i> <span>yassine.chakri@smail.inf.h-brs.de</span>
+            </div>
+            <div class="col-sm text-right bs">
+                Bachelorarbeit im Studiengang Informatik
+            </div>
+            <div class="col-sm">
+                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Upper Bar -->
+
+<!-- Start Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <span>Graph </span><span>Coloring</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto" id="myDIVimple">
+                <li class="nav-impl">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-impl">
+                    <a class="nav-link" id="impllement" href="/implementierung">Implementierung</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Start Algorithm Implementation-->
+<div class="startBody">
+    <div class="implementierung">
+        <div class="container">
+            <div class="myHeading">
+                <h2 class="implemen" id="impl"> Imprint</h2>
+            </div>
+            <p>
+                Yassine Chakri<br/>
+                Grantham-Allee 20 <br/>
+                53757 Sankt Augustin<br/>
+                Germany
+            </p>
+            <h4> Kontakt </h4>
+            <p>
+                Handy: +49 (0)8104 909 50 0<br/>
+                E-Mail: <a href="mailto:dict@leo.org" class="c-link">yassine_chakri@yahoo.de</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+<footer class="bd-footer text-muted">
+    <div class="container">
+        <ul class="bd-footer-links">
+            <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/references">References</a></li>
+            <li><a href="/impressum">Imprint</a></li>
+        </ul>
+        <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
+    </div>
+</footer>
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script language="javascript" type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        $(function () {
+            'use strict';
+            // HEADER: Adjust Slider Height
+            var windowHeigh = $(window).height();
+
+            var upperH = $('.upper-bar').innerHeight();
+            var nav = $('.navbar').innerHeight();
+            var navH = $('.bd-footer').innerHeight();
+            $('.implementierung').height(windowHeigh - (navH + nav + upperH));
+        });
+// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
+    });
+
+    //]]>
+
+</script>
+<!--noch weiter-->
+
+</body>
+</html>

@@ -1,0 +1,673 @@
+/*
+Theme Name: Yassine Chakri
+*/
+
+/* ----------------------------------------- Start Upper Bar ----------------------------- */
+.upper-bar {
+    background-color: #4267b2;
+    color: #FFF;
+    padding: 15px;
+}
+
+.upper-bar span {
+    color: #bfc6c9
+}
+
+.upper-bar .get-quote {
+    display: inline-block;
+    border: 2px solid #CECDD2;
+    padding: 2px 10px;
+    margin-left: 120px;
+}
+
+.hbsNavbar {
+    color: #000000;
+}
+
+.upper-bar span .hbsNavbar:hover {
+    color: #000000;
+}
+
+/* ----------------------------------------- End Upper Bar -----------------------------------------------------*/
+
+/* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
+.navbar-brand > span {
+    font-size: 30px;
+}
+
+.navbar-brand span:first-child {
+    font-weight: bold;
+    color: #08526d;
+}
+
+.navbar-brand span:last-child {
+    color: #ec1c23;
+}
+
+.navbar-nav .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #08526d;
+    font-weight: bold;
+}
+
+.navbar-nav .active > .nav-link {
+    color: #ec1c23 !important
+}
+
+.dropdown-item {
+    width: auto;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/* ------------------------------------------End NAV BAR ---------------------------------------------------- */
+/* ------------------------------------------Start Slider ---------------------------------------------------- */
+.slider {
+    background-color: #DDD;
+}
+
+.slider .carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.slider .carousel-inner h2 {
+    position: absolute;
+    color: #FFF;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: normal;
+    max-width: 1000px;
+    left: 75px;
+    line-height: 1.5;
+}
+
+.slider .carousel-inner h2 span {
+    color: #f8f9fa;
+    font-weight: bold;
+    font-style: oblique;
+    z-index: 3;
+    display: inline-block;
+}
+
+.slider .carousel-inner h2 span span {
+    background-color: #ec1c23;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.slider .carousel-inner .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 2;
+}
+
+.slider .carousel-item {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.slider .carousel-one {
+    background-image: url('../images/hbrs2.jpg');
+}
+
+.slider .carousel-two {
+    background-image: url('../images/hbrs3.jpg');
+}
+
+.slider .carousel-three {
+    background-image: url('../images/Abb5.PNG');
+}
+
+.slider .carousel-four {
+    background-image: url('../images/Graphcoloring2.jpg');
+}
+
+.slider .carousel-indicators li {
+    height: 6px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------ Start Slider for implementeirung -------------------------------*/
+.slider .carousel-twwo {
+    background-image: url('../images/Graph.jpg');
+}
+
+.slider .carousel-thhree {
+    background-image: url('../images/sudoku4.png');
+}
+
+.slider .carousel-foour {
+    background-image: url('../images/Graph1.jpg');
+}
+
+/* ------------------------------------------ End Slider for implementierung ----------------------------------*/
+/*  ----------------------------------------- End Slider ------------------------------------------------------------*/
+
+/*  ----------------------------------------- Start Einfuerung-- ----------------------------------------------------*/
+.startBody .myHeading h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1.25em;
+    color: #4c4a4a;
+    margin-top: 0.9em !important;
+    padding-bottom: .4em;
+    border-bottom: 2px solid #4267b2;
+}
+
+.startBody .myHeading h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.25em;
+    color: #24292e;
+    padding-bottom: .4em;
+    border-bottom: 2px solid #a9d6f2;
+    display: block;
+    margin-top: 1em !important;
+}
+
+.startBody .myHeading h3 {
+    font-size: 1.18em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+.startBody span {
+    font-size: 1em;
+    font-weight: bold;
+    color: #08526d;
+}
+
+.startBody h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 11px;
+    margin-top: 19px;
+}
+
+.startBody .myHeading h3 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+}
+
+.implementierung .myHeading p {
+    font-family: 'Quattrocento', serif;
+    line-height: 1.8em;
+    color: #444;
+    font-size: 119%;
+}
+
+/*  ----------------------------------------- End Einfuerung-- -------------------------------------------------------*/
+
+/* -------------------------------- Start Upload File for Coloring -------------------------------------------- */
+/* -- Start Anweisung -- */
+.anweisung h3 {
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 1.2px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.anweisung ul {
+    clear: both;
+    list-style-type: none;
+    padding: 0 0 30px 13%;
+    color: #000;
+    /* font-family: 'Moderat'; */
+    clear: both;
+    list-style-type: none;
+    padding: 0 0 30px 13%;
+}
+
+.anweisung ul li {
+    line-height: 24pt;
+    margin-bottom: 10px;
+    position: relative;
+    color: #000;
+    font-size: 15pt
+    /* font-family: 'Moderat'; */
+}
+
+.anweisung ul li span {
+    color: #000;
+    font-family: 'Moderat';
+    font-size: 15pt;
+}
+
+.anweisung ul li::before {
+    color: #33ccb5;
+    content: ">";
+    font-size: 18pt;
+    font-weight: 400;
+    left: -35px;
+    margin-top: -1px;
+    position: absolute;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 40%;
+    padding: 5px;
+}
+
+/* -- End Anweisung -- */
+
+.dropdown {
+    display: block;
+    margin-bottom: 10px;
+    /* border: 1px solid #000000; */
+    display: inline-block;
+}
+
+#wrapper {
+    display: flex;
+}
+
+.dropdown {
+    flex: 0 0 25%;
+}
+
+.Mydropdown {
+    flex: 1;
+}
+
+.btn-secondary:hover {
+    background-color: #128ff2
+}
+
+.uploadContainer {
+    max-width: 750px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+    position: relative;
+    padding: 20px;
+}
+
+.uploadContainer .upload-header {
+    border-bottom: 1px solid #ececec;
+}
+
+.uploadContainer .upload-header h3 {
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.3em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.58;
+}
+
+.single-upload {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.single-upload h3 {
+    display: block;
+    font-size: 1.18em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.uploadContainer input[type="file"] {
+    border: 1px solid #128ff2;
+    padding: 6px;
+    max-width: 98%;
+    min-width: 70%;
+    border-radius: 4px;
+}
+
+.uploadContainer .submit-btn {
+    display: block;
+    margin-top: 15px;
+    min-width: 100px;
+}
+
+.uploadContainer button.primary {
+    background-color: #128ff2;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    border: 1px solid transparent;
+    min-height: 38px;
+    min-width: 100px;
+    border-radius: 2px;
+}
+
+.anzeigen {
+    max-width: 750px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+    position: relative;
+    padding: 20px;
+}
+
+
+.anzeigen button.primary {
+    display: block;
+    margin-top: 15px;
+    min-width: 100px;
+    background-color: #128ff2;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    border: 1px solid transparent;
+    min-height: 38px;
+    /*min-width: 100px;*/
+    border-radius: 2px;
+}
+
+#graphAnzeigen {
+    background-color: #1275e0;
+    border: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* --------------------------------End Upload File ---------------------------------------- */
+
+/* -------------------------------- Start Select Algorithm --------------------------------------------- */
+
+.multiselect {
+    max-width: 200px;
+    margin-bottom: 8px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+    padding: 7px;
+    background-color: #0684f4;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.multiselect #checkboxes {
+    width: 100%;
+    display: none;
+    border: 1px #dadada solid;
+    font-style: normal;
+    font-family: cursive;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.multiselect #checkboxes label {
+    display: block;
+}
+
+.multiselect #checkboxes label:hover {
+    background-color: #3AAE8C;
+    border-radius: 3px;
+}
+
+.multiselect #checkboxes .divide {
+    font-weight: bold;
+    border-bottom: 1px solid #dadde1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.submitAlgorithm {
+    padding: 8px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    background: #0684f4;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid transparent;
+
+}
+
+/* -------------------------------- End Select Algorithm --------------------------------------------- */
+/* -------------------------------- Start Show Ergebnisse in JSON ------------------------------------ */
+#sigmaContainerParent {
+    position: relative;
+    /*display: none;*/
+}
+
+#sigmaContainer {
+    position: relative;
+    width: 1200px;
+    height: 1200px;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+
+}
+
+#showmyjson div {
+    margin: 10px 0px;
+}
+
+#showmyjson div a {
+    color: #0684f4;
+}
+
+#showmyjson div a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    background-color: #0684f4;
+    opcaity: 0.1;
+}
+
+pre {
+    display: none;
+    margin-top: 8px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #e9ecef;
+}
+
+/* ------------------------------------------- End Show Ergebnisse in JSON ---------------------------------------- */
+/* ------------------------------------------- Start Sudoku ------------------------------------------------------- */
+.sudokuSolver span {
+    color: #FFFFFF;
+}
+
+img.myLogo {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height: 180px;
+}
+
+table {
+    position: relative;
+    border-spacing: 0;
+    border: 4px solid #0abb9c;
+    color: #686868;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 1em;
+    box-sizing: inherit;
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+td input.emptyCell {
+    cursor: pointer;
+}
+
+td input {
+    border: 1.5px solid #0abb9c;
+    padding: 1px;
+    /*cursor: context-menu;*/
+}
+
+#t0r2, #t0r5, #t1r2, #t1r5, #t2r5,
+#t3r2, #t3r5, #t4r2, #t4r5, #t5r2, #t5r5,
+#t6r2, #t6r5, #t7r2, #t7r5, #t8r2, #t8r5 {
+    border-right: 3px solid #0abb9c;
+}
+
+#t2r0, #t2r1, #t2r3, #t2r4, #t2r6, #t2r7, #t2r8,
+#t5r8, #t5r0, #t5r1, #t5r3, #t5r4, #t5r6, #t5r7 {
+    border-bottom: 3px solid #0abb9c;
+}
+
+#t2r2, #t2r5, #t5r2, #t5r5 {
+    border-bottom: 3px solid #0abb9c;
+    border-right: 3px solid #0abb9c;
+}
+
+.inner td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 2.0em;
+}
+
+.inner td:hover {
+    background-color: #0abb9c;
+}
+
+.inner td.selected {
+    background-color: #ffbce2;
+}
+
+.inner input {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    outline: none;
+}
+
+.inner input:disabled {
+    background-color: #EEEEEE;
+}
+
+.formbutton {
+    position: relative;
+    background: #0684f4;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formwrapper {
+    margin-top: 3em;
+}
+
+#finished {
+    margin-top: 1em;
+}
+
+/* --------------------------------------------End Sudoku --------------------------------------------------------- */
+/* ---------------------------------- Start footer ----------------------------------- */
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+footer {
+    display: block;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bd-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.bd-footer {
+    text-align: left;
+}
+
+.bd-footer-links {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.bd-footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bd-footer a {
+    font-weight: 500;
+    color: #464a4c;
+}
+
+.bd-footer p {
+    margin-bottom: 0;
+}
+
+/* ------------------------------- End footer -----------------------------------  */
