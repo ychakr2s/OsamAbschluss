@@ -12,29 +12,18 @@
 <body>
 
 <!--  Start Upper Bar -->
-<!--<div class="upper-bar">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-sm">-->
-<!--                <i class="fa fa-envelope"></i> <span>Osama Email</span>-->
-<!--            </div>-->
-<!--            <div class="col-sm text-right bs">-->
-<!--                Bachelorarbeit im Studiengang Informatik-->
-<!--            </div>-->
-<!--            <div class="col-sm">-->
-<!--                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="upper-bar">
+    <div class="container">
+    </div>
+</div>
 <!-- End Upper Bar -->
 
 <!-- Start Nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">
-            <span>Graph </span><span>Coloring</span>
-        </a>
+        <!--        <a class="navbar-brand" href="/">-->
+        <!--            <span>Graph </span><span>Coloring</span>-->
+        <!--        </a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -42,14 +31,17 @@
         </button>
 
         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="navbar-nav ml-auto" id="myDIVimple">
-                <li class="nav-impl">
-                    <a class="nav-link" href="/">Home</a>
+            <ul class="navbar-nav mr-auto" id="myDIVimple">
+                <li class="nav-impl active">
+                    <a class="nav-link" href="/">Home
+                        <span
+                                class="sr-only">(current)</span> </a>
                 </li>
                 <li class="nav-impl">
                     <a class="nav-link" id="impllement" href="#impl">Implementierung der Algorithmen</a>
                 </li>
             </ul>
+            <span class="navbar-text nav-text"> text text text </span>
         </div>
     </div>
 </nav>
@@ -265,9 +257,9 @@
                 if (isJson(data)) {
                     // Initialise sigma:
                     let myObject = JSON.parse(data);
-                    console.log("my Object: "+myObject);
+                    console.log("my Object: " + myObject);
                     var edge = myObject.e;
-                    console.log("MY edges: "+edge);
+                    console.log("MY edges: " + edge);
 
                     s = new sigma(
                         {

@@ -1,48 +1,54 @@
 /*
-Theme Name: Yassine Chakri
+Theme Name: Osama
 */
 
 /* ----------------------------------------- Start Upper Bar ----------------------------- */
-.upper-bar {
-    background-color: #4267b2;
-    color: #FFF;
-    padding: 15px;
-}
+/*.upper-bar {*/
+/*    background-color: #4267b2;*/
+/*    color: #FFF;*/
+/*    padding: 15px;*/
+/*}*/
 
-.upper-bar span {
-    color: #bfc6c9
-}
+/*.upper-bar span {*/
+/*    color: #bfc6c9*/
+/*}*/
 
-.upper-bar .get-quote {
-    display: inline-block;
-    border: 2px solid #CECDD2;
-    padding: 2px 10px;
-    margin-left: 120px;
-}
+/*.upper-bar .get-quote {*/
+/*    display: inline-block;*/
+/*    border: 2px solid #CECDD2;*/
+/*    padding: 2px 10px;*/
+/*    margin-left: 120px;*/
+/*}*/
 
-.hbsNavbar {
-    color: #000000;
-}
+/*.hbsNavbar {*/
+/*    color: #000000;*/
+/*}*/
 
-.upper-bar span .hbsNavbar:hover {
-    color: #000000;
-}
+/*.upper-bar span .hbsNavbar:hover {*/
+/*    color: #000000;*/
+/*}*/
 
 /* ----------------------------------------- End Upper Bar -----------------------------------------------------*/
 
 /* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
-.navbar-brand > span {
-    font-size: 30px;
+.bg-light {
+    background-color: #9fc2e9 !important;
 }
 
-.navbar-brand span:first-child {
-    font-weight: bold;
-    color: #08526d;
+.navbar-light .navbar-text {
+    color: rgba(0, 0, 0, .9) !important;
+    font-family: "serif" !important;
+    font-size: 21px !important;
 }
 
-.navbar-brand span:last-child {
-    color: #ec1c23;
-}
+/*.navbar-brand span:first-child {*/
+/*    font-weight: bold;*/
+/*    color: #08526d;*/
+/*}*/
+
+/*.navbar-brand span:last-child {*/
+/*    color: #ec1c23;*/
+/*}*/
 
 .navbar-nav .nav-link {
     font-size: 13px;
@@ -121,19 +127,19 @@ h3 {
 }
 
 .slider .carousel-one {
-    background-image: url('../images/hbrs2.jpg');
+    background-image: url('../images/p2.jpeg');
 }
 
 .slider .carousel-two {
-    background-image: url('../images/hbrs3.jpg');
+    background-image: url('../images/p8.jpeg');
 }
 
 .slider .carousel-three {
-    background-image: url('../images/Abb5.PNG');
+    background-image: url('../images/p1.jpeg');
 }
 
 .slider .carousel-four {
-    background-image: url('../images/Graphcoloring2.jpg');
+    background-image: url('../images/p2.jpeg');
 }
 
 .slider .carousel-indicators li {
@@ -143,15 +149,15 @@ h3 {
 
 /* ------------------------------------------ Start Slider for implementeirung -------------------------------*/
 .slider .carousel-twwo {
-    background-image: url('../images/Graph.jpg');
+    background-image: url('../images/p3.jpeg');
 }
 
 .slider .carousel-thhree {
-    background-image: url('../images/sudoku4.png');
+    background-image: url('../images/p5.jpeg');
 }
 
 .slider .carousel-foour {
-    background-image: url('../images/Graph1.jpg');
+    background-image: url('../images/p6.jpeg');
 }
 
 /* ------------------------------------------ End Slider for implementierung ----------------------------------*/
