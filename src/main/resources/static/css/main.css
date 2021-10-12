@@ -59,7 +59,7 @@ Theme Name: Osama
 }
 
 .navbar-nav .active > .nav-link {
-    color: #ec1c23 !important
+    color: #89250f !important
 }
 
 .dropdown-item {
@@ -127,7 +127,7 @@ h3 {
 }
 
 .slider .carousel-one {
-    background-image: url('../images/p2.jpeg');
+    background-image: url('../images/p6.jpeg');
 }
 
 .slider .carousel-two {
@@ -149,7 +149,7 @@ h3 {
 
 /* ------------------------------------------ Start Slider for implementeirung -------------------------------*/
 .slider .carousel-twwo {
-    background-image: url('../images/p3.jpeg');
+    background-image: url('../images/p4.jpeg');
 }
 
 .slider .carousel-thhree {
@@ -157,7 +157,7 @@ h3 {
 }
 
 .slider .carousel-foour {
-    background-image: url('../images/p6.jpeg');
+    background-image: url('../images/p3.jpeg');
 }
 
 /* ------------------------------------------ End Slider for implementierung ----------------------------------*/

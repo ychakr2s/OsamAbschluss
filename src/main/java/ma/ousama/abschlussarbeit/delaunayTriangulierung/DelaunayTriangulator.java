@@ -1,7 +1,5 @@
 package ma.ousama.abschlussarbeit.delaunayTriangulierung;
 
-
-
 import ma.ousama.abschlussarbeit.model.Edge;
 import ma.ousama.abschlussarbeit.model.Node;
 import ma.ousama.abschlussarbeit.model.Triangle;
