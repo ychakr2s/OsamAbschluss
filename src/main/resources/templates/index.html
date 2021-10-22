@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
-
     <title>Abschussarbeit Informatik</title>
 </head>
 <body>
@@ -15,14 +14,11 @@
     <div class="container">
     </div>
 </div>
-
 <!-- End Upper Bar -->
+
 <!-- Start Nav bar  -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <!--        <a class="navbar-brand float-right" href="/">-->
-        <!--            <span >Graph </span><span>Coloring</span>-->
-        <!--        </a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +47,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/implementierung">Implementierung</a>
                 </li>
-
             </ul>
-            <span class="navbar-text nav-text"> text text text </span>
+            <h2 class="navbar-brand brand-name">
+                <a href="/"><img class ="img-fluid" src="images/download.png"></a>
+            </h2>
         </div>
     </div>
 </nav>
@@ -99,7 +96,6 @@
                     bezeichnet werden. Mithilfe von Graphen können überraschend viele Problembereiche modelliert werden,
                     darunter soziale Netzwerke, Chemie, Terminplanung, Paketzustellung, Satellitennavigation,
                     Elektrotechnik und Computervernetzung.</p>
-
             </div>
         </div>
     </div>
@@ -110,7 +106,6 @@
             <div class="myHeading this">
                 <h2 class="anwend">Anwendungen</h2>
                 <h3>Beispiel 1</h3>
-
                 <h3>Beispiel 2</h3>
             </div>
         </div>
@@ -159,10 +154,8 @@
         <div class="container">
             <ul class="bd-footer-links">
                 <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="/references">References</a></li>
-                <li><a href="/impressum">Imprint</a></li>
-
+                <li><a href="/impressum">Impressum</a></li>
             </ul>
             <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
         </div>
@@ -178,9 +171,7 @@
     //<![CDATA[
     $(document).ready(function () {
 // ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
-        var matrix = [];
 
-        $("#grid").fadeIn(900);
         var header = document.getElementById("myDIV");
         var btns = header.getElementsByClassName("nav-item");
         for (var i = 0; i < btns.length; i++) {
@@ -190,8 +181,6 @@
                 this.className += " active";
             });
         }
-
-        console.log("Salam i am from Ready jQuery: ", matrix);
     });
 
     //]]>

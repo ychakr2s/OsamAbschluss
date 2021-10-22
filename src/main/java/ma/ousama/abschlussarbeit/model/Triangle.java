@@ -2,8 +2,8 @@ package ma.ousama.abschlussarbeit.model;
 
 import ma.ousama.abschlussarbeit.delaunayTriangulierung.EdgeDistancePack;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Triangle {
@@ -54,7 +54,6 @@ public class Triangle {
         if (!hasSameSign(pab, pca)) {
             return false;
         }
-
         return true;
     }
 
@@ -147,9 +146,9 @@ public class Triangle {
         return Math.signum(a) == Math.signum(b);
     }
 
-    public static LinkedList<Edge> convertTriangleToEdges(List<Triangle> triangles){
+    public static ArrayList<Edge> convertTriangleToEdges(List<Triangle> triangles){
 
-        LinkedList<Edge> result = new LinkedList <Edge> ();
+        ArrayList<Edge> result = new ArrayList <Edge> ();
 
         for ( int i = 0 ;  i < triangles.size() ;i++ ){
             Edge a =new Edge( triangles.get(i).getA(), triangles.get(i).getB());

@@ -1,25 +1,19 @@
 package ma.ousama.abschlussarbeit.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.util.Objects;
-
 
 /**
  * @author Masud Taher
  * @version 1.0
  */
 
-public class Node implements Comparable<Node> {
+public class Node implements Comparable<Node>  {
 
-    private double x;
-    private double y;
+    private double x ;
+    private double y ;
 
-    @JsonIgnore
-    private double x_transformed;
-    @JsonIgnore
-    private double y_transformed;
-
+    private double x_transformed ;
+    private double y_transformed ;
 
     public Node(final double xCoordinate, final double yCoordinate) {
         this.x = xCoordinate;
@@ -28,27 +22,23 @@ public class Node implements Comparable<Node> {
         this.y_transformed = yCoordinate;
     }
 
-    @JsonIgnore
     public double getX_transformed() {
         return x_transformed;
     }
 
-    @JsonIgnore
     public void setX_transformed(double x_transformed) {
         this.x_transformed = x_transformed;
     }
 
-    @JsonIgnore
     public double getY_transformed() {
         return y_transformed;
     }
 
-    @JsonIgnore
     public void setY_transformed(double y_transformed) {
         this.y_transformed = y_transformed;
     }
 
-    public Node(double xCoordinate, double yCoordinate, double x_transformed, double y_transformed) {
+    public Node(double xCoordinate, double yCoordinate, double x_transformed  , double y_transformed) {
         this.x = xCoordinate;
         this.y = yCoordinate;
         this.x_transformed = x_transformed;
@@ -62,6 +52,7 @@ public class Node implements Comparable<Node> {
     public double getY() {
         return y;
     }
+
 
 
     public void setX(double x) {
@@ -113,23 +104,23 @@ public class Node implements Comparable<Node> {
 
     @Override
     public int compareTo(Node node) {
-        if (this.y_transformed < node.getY_transformed()) {
+        if (this.y_transformed < node.getY_transformed()){
             return -1;
-        } else if (this.y_transformed == node.getY_transformed()) { // if two points have the same y-coordinates then x-coordinates is looked at
-            if (this.x_transformed < node.getX_transformed()) {
+        } else if (this.y_transformed == node.getY_transformed()){ // if two points have the same y-coordinates then x-coordinates is looked at
+            if (this.x_transformed < node.getX_transformed()){
                 return -1;
-            } else if (this.x_transformed == node.getX_transformed()) {
+            }else if(this.x_transformed == node.getX_transformed() ){
                 return 0;
-            } else {
+            }else {
                 return 1;
             }
-        } else {
+        } else{
             return 1;
         }
     }
 
     @Override
     public String toString() {
-        return x + "\t" + y;
+        return x + "\t" + y  ;
     }
 }

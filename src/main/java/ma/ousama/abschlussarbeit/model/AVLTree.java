@@ -3,7 +3,7 @@ package ma.ousama.abschlussarbeit.model;
 import java.util.ArrayList;
 
 /**
- * @author Masud Taher
+ * @author Ousama
  * @version 1.0
  */
 
@@ -20,7 +20,6 @@ public class AVLTree<T extends Comparable<T>> {
 	}
 
 	private Node w; // Wurzel
-
 
 	public boolean isEmpty() {
 		return w == null;
@@ -63,45 +62,41 @@ public class AVLTree<T extends Comparable<T>> {
 
 		int c = wurzel.v.compareTo(vSkript);
 
-		//Achtung, kann sein dass das element nicht existiert
-		while (c != 0){
-			//Wenn Wurzel größer ist als v, suche im linken Teilbaum
-			if (c > 0 ){
+		// Achtung, kann sein dass das element nicht existiert
+		while (c != 0) {
+			// Wenn Wurzel größer ist als v, suche im linken Teilbaum
+			if (c > 0) {
 				try {
 					wurzel = wurzel.l;
 					c = wurzel.v.compareTo(vSkript);
-				}
-				catch (NullPointerException e){
+				} catch (NullPointerException e) {
 					System.out.println("Knoten wurde nicht im AVL-Baum gefunden");
 					throw new java.util.NoSuchElementException();
 				}
 			}
 
-			//Sonst such im rechten Teilbaum
-			else{
+			// Sonst such im rechten Teilbaum
+			else {
 				try {
 					wurzel = wurzel.r;
 					c = wurzel.v.compareTo(vSkript);
-				}
-				catch (NullPointerException e){
+				} catch (NullPointerException e) {
 					System.out.println("Knoten wurde nicht im AVL-Baum gefunden");
 					throw new java.util.NoSuchElementException();
 				}
 			}
 		}
 
-
 		T res = null;
-		//linker Nachfolger
-		if (wurzel.l != null){
+		// linker Nachfolger
+		if (wurzel.l != null) {
 			res = wurzel.l.v;
 		}
 
-		//rechter Nachfolger
-		if (wurzel.r != null){
+		// rechter Nachfolger
+		if (wurzel.r != null) {
 			res = wurzel.r.v;
 		}
-
 
 		return res;
 	}
@@ -116,29 +111,27 @@ public class AVLTree<T extends Comparable<T>> {
 
 		int c = wurzel.v.compareTo(vSkript);
 		T prev = wurzel.v;
-		//Achtung, kann sein dass das element nicht existiert
-		while (c != 0){
-			//Wenn Wurzel größer ist als v, suche im linken Teilbaum
-			if (c > 0 ){
+		// Achtung, kann sein dass das element nicht existiert
+		while (c != 0) {
+			// Wenn Wurzel größer ist als v, suche im linken Teilbaum
+			if (c > 0) {
 				try {
 					prev = wurzel.v;
 					wurzel = wurzel.l;
 					c = wurzel.v.compareTo(vSkript);
-				}
-				catch (NullPointerException e){
+				} catch (NullPointerException e) {
 					System.out.println("Knoten wurde nicht im AVL-Baum gefunden");
 					throw new java.util.NoSuchElementException();
 				}
 			}
 
-			//Sonst such im rechten Teilbaum
-			else{
+			// Sonst such im rechten Teilbaum
+			else {
 				try {
 					prev = wurzel.v;
 					wurzel = wurzel.r;
 					c = wurzel.v.compareTo(vSkript);
-				}
-				catch (NullPointerException e){
+				} catch (NullPointerException e) {
 					System.out.println("Knoten wurde nicht im AVL-Baum gefunden");
 					throw new java.util.NoSuchElementException();
 				}
@@ -147,19 +140,25 @@ public class AVLTree<T extends Comparable<T>> {
 		return prev;
 	}
 
-
 	public T naechste(T v) {
-		ArrayList <T> inorder = new ArrayList<T>();
+		ArrayList<T> inorder = new ArrayList<T>();
 		linearisiereInOrder(inorder);
 
-		return inorder.get(inorder.indexOf(v)+1);
+		return inorder.get(inorder.indexOf(v) + 1);
 	}
 
-
 	public T vorgaenger(T v) {
-		ArrayList <T> inorder = new ArrayList<T>();
+		ArrayList<T> inorder = new ArrayList<T>();
 		linearisiereInOrder(inorder);
-		return inorder.get(inorder.indexOf(v)-1);
+
+//		System.out.println(		Arrays.toString(inorder.toArray()));
+
+
+		try {
+			return inorder.get(inorder.indexOf(v) - 1);
+		} catch (Exception e) {
+			return v;
+		}
 	}
 
 	public void linearisiereInOrder(ArrayList<T> ps, Node k) {
@@ -173,8 +172,6 @@ public class AVLTree<T extends Comparable<T>> {
 	public void linearisiereInOrder(ArrayList<T> ps) {
 		linearisiereInOrder(ps, w);
 	}
-
-
 
 	public boolean contains(T v) {
 		Node k = w;
@@ -460,18 +457,18 @@ public class AVLTree<T extends Comparable<T>> {
 		k.r = b;
 
 		switch (bAlt) {
-		case 0: // hoehe(A2)=hoehe(A3)=h-1
-			v.b = 0;
-			k.b = 0;
-			break;
-		case 1: // hoehe(A2)=h-1, hoehe(A3)=h-2
-			v.b = 0;
-			k.b = -1;
-			break;
-		case -1: // hoehe(A2)=h-2, hoehe(A3)=h-1
-			v.b = 1;
-			k.b = 0;
-			break;
+			case 0: // hoehe(A2)=hoehe(A3)=h-1
+				v.b = 0;
+				k.b = 0;
+				break;
+			case 1: // hoehe(A2)=h-1, hoehe(A3)=h-2
+				v.b = 0;
+				k.b = -1;
+				break;
+			case -1: // hoehe(A2)=h-2, hoehe(A3)=h-1
+				v.b = 1;
+				k.b = 0;
+				break;
 		}
 		u.b = 0;
 	}
@@ -501,18 +498,18 @@ public class AVLTree<T extends Comparable<T>> {
 		k.l = b;
 
 		switch (bAlt) {
-		case 0: // hoehe(A2)=hoehe(A3)=h-1
-			v.b = 0;
-			k.b = 0;
-			break;
-		case 1: // hoehe(A2)=h-1, hoehe(A3)=h-2
-			v.b = -1;
-			k.b = -0;
-			break;
-		case -1: // hoehe(A2)=h-2, hoehe(A3)=h-1
-			v.b = 0;
-			k.b = 1;
-			break;
+			case 0: // hoehe(A2)=hoehe(A3)=h-1
+				v.b = 0;
+				k.b = 0;
+				break;
+			case 1: // hoehe(A2)=h-1, hoehe(A3)=h-2
+				v.b = -1;
+				k.b = -0;
+				break;
+			case -1: // hoehe(A2)=h-2, hoehe(A3)=h-1
+				v.b = 0;
+				k.b = 1;
+				break;
 		}
 		u.b = 0;
 	}

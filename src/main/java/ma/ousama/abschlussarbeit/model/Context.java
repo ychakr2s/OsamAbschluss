@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * which makes Context independent of how an algorithm is implemented.
  */
 public class Context {
+
     private ArrayList<AbstractAlgorithms> algorithms;
 
     public Context(ArrayList<AbstractAlgorithms> algorithms) {

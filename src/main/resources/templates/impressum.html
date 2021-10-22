@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -13,17 +13,6 @@
 <!--  Start Upper Bar -->
 <div class="upper-bar">
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <i class="fa fa-envelope"></i> <span>yassine.chakri@smail.inf.h-brs.de</span>
-            </div>
-            <div class="col-sm text-right bs">
-                Bachelorarbeit im Studiengang Informatik
-            </div>
-            <div class="col-sm">
-                <span class="get-quote"><a class="hbsNavbar" target="_blank" href="https://www.h-brs.de/de"> Hochschule Bonn-Rhein-Sieg  </a></span>
-            </div>
-        </div>
     </div>
 </div>
 <!-- End Upper Bar -->
@@ -31,9 +20,6 @@
 <!-- Start Nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="/">
-            <span>Graph </span><span>Coloring</span>
-        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -41,23 +27,29 @@
         </button>
 
         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="navbar-nav ml-auto" id="myDIVimple">
-                <li class="nav-impl">
-                    <a class="nav-link" href="/">Home</a>
+            <ul class="navbar-nav mr-auto" id="myDIVimple">
+                <li class="nav-impl active">
+                    <a class="nav-link" href="/">Home
+                        <span
+                                class="sr-only">(current)</span> </a>
                 </li>
                 <li class="nav-impl">
-                    <a class="nav-link" id="impllement" href="/implementierung">Implementierung</a>
+                    <a class="nav-link" id="impllement" href="/implementierung">Implementierung der Algorithmen</a>
                 </li>
             </ul>
+            <h2 class="navbar-brand brand-name">
+                <a href="/"><img class ="img-fluid" src="images/download.png"></a>
+            </h2>
         </div>
     </div>
 </nav>
-<!--Start Algorithm Implementation-->
+<!-- End Nav Bar -->
+<!--Start Impressum-->
 <div class="startBody">
     <div class="implementierung">
         <div class="container">
             <div class="myHeading">
-                <h2 class="implemen" id="impl"> Imprint</h2>
+                <h2 class="implemen" id="impl"> Impressum</h2>
             </div>
             <p>
                 Yassine Chakri<br/>
@@ -72,15 +64,13 @@
             </p>
         </div>
     </div>
-
 </div>
 <footer class="bd-footer text-muted">
     <div class="container">
         <ul class="bd-footer-links">
             <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
-            <li><a href="#">About</a></li>
             <li><a href="/references">References</a></li>
-            <li><a href="/impressum">Imprint</a></li>
+            <li><a href="/impressum">Impressum</a></li>
         </ul>
         <p>Entworfen und gebaut mit all der Liebe der Welt von @Yassine Chakri.</p>
     </div>
@@ -89,7 +79,6 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script language="javascript" type="text/javascript">
     //<![CDATA[
     $(document).ready(function () {
@@ -109,7 +98,7 @@
     //]]>
 
 </script>
-<!--noch weiter-->
+<!-- noch weiter -->
 
 </body>
 </html>

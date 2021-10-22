@@ -11,12 +11,13 @@ import java.util.Objects;
 
 public class Edge {
 	private Node start; // pi
+
 	private Node end; // pj
 
-	@JsonIgnore
 	private Edge e_transformed;
 
 	public Edge() {
+
 	}
 
 	public Edge(Node start, Node end) {
@@ -33,11 +34,11 @@ public class Edge {
 		this.e_transformed = e_transformed;
 	}
 
-	@JsonIgnore public Edge getE_transformed() {
+	public Edge getE_transformed() {
 		return e_transformed;
 	}
 
-	@JsonIgnore public void setE_transformed(Edge e_transformed) {
+	public void setE_transformed(Edge e_transformed) {
 		this.e_transformed = e_transformed;
 	}
 

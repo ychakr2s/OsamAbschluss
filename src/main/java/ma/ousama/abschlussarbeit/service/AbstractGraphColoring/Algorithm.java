@@ -15,14 +15,14 @@ public class Algorithm {
     Graph graph;
 
 
-    GraphVariable grV;
+//    GraphVariable grV;
 
     public Algorithm(String name, int num, Graph gr, double time) {
         this.algorithm = name;
         this.edges = num;
         this.graph = gr;
         this.time = time;
-        this.grV = grV;
+//        this.grV = grV;
     }
 
 
@@ -54,16 +54,16 @@ public class Algorithm {
         return graph;
     }
 
-    public void setGraph(Graph graph) {
-        this.graph = graph;
-    }
-    public GraphVariable getGrV() {
-        return grV;
-    }
-
-    public void setGrV(GraphVariable grV) {
-        this.grV = grV;
-    }
+//    public void setGraph(Graph graph) {
+//        this.graph = graph;
+//    }
+//    public GraphVariable getGrV() {
+//        return grV;
+//    }
+//
+//    public void setGrV(GraphVariable grV) {
+//        this.grV = grV;
+//    }
 
 }
 

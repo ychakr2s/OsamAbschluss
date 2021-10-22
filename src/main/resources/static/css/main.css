@@ -1,36 +1,12 @@
 /*
-Theme Name: Osama
+Theme Name: Ousama
 */
 
-/* ----------------------------------------- Start Upper Bar ----------------------------- */
-/*.upper-bar {*/
-/*    background-color: #4267b2;*/
-/*    color: #FFF;*/
-/*    padding: 15px;*/
-/*}*/
-
-/*.upper-bar span {*/
-/*    color: #bfc6c9*/
-/*}*/
-
-/*.upper-bar .get-quote {*/
-/*    display: inline-block;*/
-/*    border: 2px solid #CECDD2;*/
-/*    padding: 2px 10px;*/
-/*    margin-left: 120px;*/
-/*}*/
-
-/*.hbsNavbar {*/
-/*    color: #000000;*/
-/*}*/
-
-/*.upper-bar span .hbsNavbar:hover {*/
-/*    color: #000000;*/
-/*}*/
+/* ------------------------------------------ Start Upper Bar ----------------------------------------- */
 
 /* ----------------------------------------- End Upper Bar -----------------------------------------------------*/
-
 /* ------------------------------------------Start NAV BAR ---------------------------------------------------- */
+
 .bg-light {
     background-color: #9fc2e9 !important;
 }
@@ -40,15 +16,9 @@ Theme Name: Osama
     font-family: "serif" !important;
     font-size: 21px !important;
 }
-
-/*.navbar-brand span:first-child {*/
-/*    font-weight: bold;*/
-/*    color: #08526d;*/
-/*}*/
-
-/*.navbar-brand span:last-child {*/
-/*    color: #ec1c23;*/
-/*}*/
+.carousel-indicators > li {
+    border-radius: 45%;
+}
 
 .navbar-nav .nav-link {
     font-size: 13px;
@@ -60,6 +30,10 @@ Theme Name: Osama
 
 .navbar-nav .active > .nav-link {
     color: #89250f !important
+}
+.navbar-brand {
+    max-width: 30%;
+    float: right;
 }
 
 .dropdown-item {
@@ -343,7 +317,7 @@ h3 {
 }
 
 .uploadContainer input[type="file"] {
-    border: 1px solid #128ff2;
+    border: 1px solid #4d3393;
     padding: 6px;
     max-width: 98%;
     min-width: 70%;
@@ -357,53 +331,18 @@ h3 {
 }
 
 .uploadContainer button.primary {
-    background-color: #128ff2;
+    background-color: #4d3393;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
     border: 1px solid transparent;
     min-height: 38px;
     min-width: 100px;
     border-radius: 2px;
-}
-
-.anzeigen {
-    max-width: 750px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.2);
-    min-height: 100px;
-    position: relative;
-    padding: 20px;
-}
-
-
-.anzeigen button.primary {
-    display: block;
-    margin-top: 15px;
-    min-width: 100px;
-    background-color: #128ff2;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
-    color: #fff;
-    border: 1px solid transparent;
-    min-height: 38px;
-    /*min-width: 100px;*/
-    border-radius: 2px;
-}
-
-#graphAnzeigen {
-    background-color: #1275e0;
-    border: #ffffff;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 2px;
-    font-weight: bold;
-    color: #ffffff;
 }
 
 /* --------------------------------End Upload File ---------------------------------------- */
 
-/* -------------------------------- Start Select Algorithm --------------------------------------------- */
+/* --------------------------------Start Select Algorithm --------------------------------- */
 
 .multiselect {
     max-width: 200px;
@@ -418,7 +357,7 @@ h3 {
     width: 100%;
     font-weight: bold;
     padding: 7px;
-    background-color: #0684f4;
+    background-color: #4d3393;
     color: #FFFFFF;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -462,30 +401,14 @@ h3 {
     padding: 8px;
     border-radius: 2px;
     color: #FFFFFF;
-    background: #0684f4;
+    background: #4d3393;
     font-size: 14px;
     font-weight: bold;
     border: 1px solid transparent;
 
 }
-
 /* -------------------------------- End Select Algorithm --------------------------------------------- */
 /* -------------------------------- Start Show Ergebnisse in JSON ------------------------------------ */
-#sigmaContainerParent {
-    position: relative;
-    /*display: none;*/
-}
-
-#sigmaContainer {
-    position: relative;
-    width: 1200px;
-    height: 1200px;
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-
-}
 
 #showmyjson div {
     margin: 10px 0px;
@@ -517,113 +440,6 @@ pre {
 }
 
 /* ------------------------------------------- End Show Ergebnisse in JSON ---------------------------------------- */
-/* ------------------------------------------- Start Sudoku ------------------------------------------------------- */
-.sudokuSolver span {
-    color: #FFFFFF;
-}
-
-img.myLogo {
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-    height: 180px;
-}
-
-table {
-    position: relative;
-    border-spacing: 0;
-    border: 4px solid #0abb9c;
-    color: #686868;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 1em;
-    box-sizing: inherit;
-}
-
-*, ::after, ::before {
-    box-sizing: content-box;
-}
-
-td input.emptyCell {
-    cursor: pointer;
-}
-
-td input {
-    border: 1.5px solid #0abb9c;
-    padding: 1px;
-    /*cursor: context-menu;*/
-}
-
-#t0r2, #t0r5, #t1r2, #t1r5, #t2r5,
-#t3r2, #t3r5, #t4r2, #t4r5, #t5r2, #t5r5,
-#t6r2, #t6r5, #t7r2, #t7r5, #t8r2, #t8r5 {
-    border-right: 3px solid #0abb9c;
-}
-
-#t2r0, #t2r1, #t2r3, #t2r4, #t2r6, #t2r7, #t2r8,
-#t5r8, #t5r0, #t5r1, #t5r3, #t5r4, #t5r6, #t5r7 {
-    border-bottom: 3px solid #0abb9c;
-}
-
-#t2r2, #t2r5, #t5r2, #t5r5 {
-    border-bottom: 3px solid #0abb9c;
-    border-right: 3px solid #0abb9c;
-}
-
-.inner td {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 2.0em;
-}
-
-.inner td:hover {
-    background-color: #0abb9c;
-}
-
-.inner td.selected {
-    background-color: #ffbce2;
-}
-
-.inner input {
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    outline: none;
-}
-
-.inner input:disabled {
-    background-color: #EEEEEE;
-}
-
-.formbutton {
-    position: relative;
-    background: #0684f4;
-    display: inline-block;
-    padding: 8px;
-    color: #fff;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    line-height: 1;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#formwrapper {
-    margin-top: 3em;
-}
-
-#finished {
-    margin-top: 1em;
-}
-
-/* --------------------------------------------End Sudoku --------------------------------------------------------- */
 /* ---------------------------------- Start footer ----------------------------------- */
 .bd-footer {
     padding: 4rem 0;
@@ -675,5 +491,4 @@ footer {
 .bd-footer p {
     margin-bottom: 0;
 }
-
 /* ------------------------------- End footer -----------------------------------  */

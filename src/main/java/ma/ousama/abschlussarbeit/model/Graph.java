@@ -1,43 +1,33 @@
 package ma.ousama.abschlussarbeit.model;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 /**
- * @author Masud Taher
+ * @author Ousama
  * @version 1.0
  */
 
 public class Graph {
 
-    private LinkedList<Node> v;
-    private LinkedList<Edge> e;
-
+    private ArrayList<Node> v;
+    private ArrayList<Edge> e;
 
     public Graph(Graph g) {
         this.v = g.getV();
         this.e = g.getE();
     }
 
-    public Graph(LinkedList<Node> v, LinkedList<Edge> e) {
+    public Graph(ArrayList<Node> v, ArrayList<Edge> e) {
         this.v = v;
         this.e = e;
-
     }
 
-    public LinkedList<Node> getV() {
+    public ArrayList<Node> getV() {
         return v;
     }
 
-    public LinkedList<Edge> getE() {
+    public ArrayList<Edge> getE() {
         return e;
-    }
-
-    public int getVSize() {
-        return v.size();
-    }
-
-    public int getESize() {
-        return e.size();
     }
 
     @Override

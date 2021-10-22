@@ -3,6 +3,7 @@ package ma.ousama.abschlussarbeit.delaunayTriangulierung;
 
 import ma.ousama.abschlussarbeit.model.Edge;
 
+
 public class EdgeDistancePack implements Comparable<EdgeDistancePack> {
 
     public Edge edge;

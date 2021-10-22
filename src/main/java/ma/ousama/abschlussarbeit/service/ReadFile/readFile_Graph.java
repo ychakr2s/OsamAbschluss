@@ -8,8 +8,8 @@ import ma.ousama.abschlussarbeit.model.Node;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Objects;
 
 public class readFile_Graph {
@@ -37,8 +37,8 @@ public class readFile_Graph {
 
         File file = new File(path);
 
-        LinkedList<Node> v = new LinkedList<Node>();
-        LinkedList<Edge> e = new LinkedList<Edge>();
+        ArrayList<Node> v = new ArrayList<Node>();
+        ArrayList<Edge> e = new ArrayList<Edge>();
 
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;

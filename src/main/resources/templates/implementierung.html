@@ -10,26 +10,20 @@
     <title>Implementierung</title>
 </head>
 <body>
-
 <!--  Start Upper Bar -->
 <div class="upper-bar">
     <div class="container">
     </div>
 </div>
 <!-- End Upper Bar -->
-
 <!-- Start Nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <!--        <a class="navbar-brand" href="/">-->
-        <!--            <span>Graph </span><span>Coloring</span>-->
-        <!--        </a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav mr-auto" id="myDIVimple">
                 <li class="nav-impl active">
@@ -41,7 +35,9 @@
                     <a class="nav-link" id="impllement" href="#impl">Implementierung der Algorithmen</a>
                 </li>
             </ul>
-            <span class="navbar-text nav-text"> text text text </span>
+            <h2 class="navbar-brand brand-name">
+                <a href="/"><img class="img-fluid" src="images/download.png"></a>
+            </h2>
         </div>
     </div>
 </nav>
@@ -61,13 +57,11 @@
             <div class="carousel-item carousel-foour">
             </div>
         </div>
-
         <ol class="carousel-indicators">
             <li data-target="#main-slider" data-slide-to="0" class="active"></li>
             <li data-target="#main-slider" data-slide-to="1"></li>
             <li data-target="#main-slider" data-slide-to="2"></li>
         </ol>
-
     </div>
 </div>
 <!-- End Slider -->
@@ -80,7 +74,6 @@
             <div class="myHeading">
                 <h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>
             </div>
-
             <div class="anweisung">
                 <h3>3 Schritte für die Implementierung
                 </h3>
@@ -91,20 +84,11 @@
                         generieter Graph. <br/>Die Graph-Datei muss wie eine von diesen Fotos aussehen.<br/>
                         Beachten Sie, dass die maximal zulässige Größe des Graphen ist 1048.576 kb.
                     </li>
-                    <!--                    <div class="row">-->
-                    <!--                        <div class="column">-->
-                    <!--                            <img src="images/Graph_Impl2.PNG" height="550" width="500"/>-->
-                    <!--                        </div>-->
-                    <!--                        <div class="column">-->
-                    <!--                            <img src="images/Graph_Impl1.PNG" height="550" width="500"/>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
                     <li>mindestens ein Algorithmus muss ausgewählt werden.</li>
                     <li>den Submit Button Klicken</li>
                 </ul>
             </div>
             <div class="myHeading">
-                <!--<h2 class="implemen" id="impl"> Implementierung der Algorithmen</h2>-->
                 <h3>Implementierung der exakten und heuristischen Algorithmen / Das Ergebnis der
                     Färbungsalgorithmen</h3>
             </div>
@@ -134,53 +118,33 @@
                     </div>
                     <form class="CheckBox" action="editCustomer" method="post">
                         <div id="checkboxes">
-                            <!--                            <select ></select>-->
-                            <option class="divide">Effiziente Algorithmen</option>
-                            <label>
-                                <input type="checkbox" class="chk" value="EffizienterAlgorithmus"/>Effizienter
-                                Algorithmus
-                            </label>
-
-                            <option class="divide">Naive Algorithmen</option>
+                            <option class="divide">Algorithmen</option>
                             <!-- <br/> -->
                             <label>
-                                <input type="checkbox" class="chk" value="NaiveAlgorithmus1"/>Naive Algorithmus 1
+                                <input type="checkbox" class="chk" value="RNG1"/>RNG1
                             </label>
                             <label>
-                                <input type="checkbox" class="chk" value="NaiveAlgorithmus2"/>Naive Algorithmus
-                                2</label>
+                                <input type="checkbox" class="chk" value="RNG2"/>RNG2
+                            </label>
+                            <label>
+                                <input type="checkbox" class="chk" value="RNG3"/>RNG3
+                            </label>
                         </div>
                     </form>
                 </div>
                 <button class="submitAlgorithm">Submit</button>
             </div>
-
             <div id="showmyjson">
             </div>
-
-            <div class="anzeigen">
-                <div class="upload-header">
-                    <h4>Graph Anzeigen</h4>
-                </div>
-                <button id="graphAnzeigen">Anzeigen</button>
-            </div>
-
-            <div id="sigmaContainerParent" style="display: none;">
-                <div id="sigmaContainer">
-                </div>
-            </div>
-
             <!--End Algorithm Implementation-->
-
         </div>
     </div>
     <footer class="bd-footer text-muted">
         <div class="container">
             <ul class="bd-footer-links">
                 <li><a href="https://github.com/ychakr2s/WebAbschlussRepository">GitHub</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="/references">References</a></li>
-                <li><a href="/impressum">Imprint</a></li>
+                <li><a href="/impressum">Impressum</a></li>
             </ul>
             <p>Entworfen und gebaut mit all der Liebe der Welt von @Osama El Arabi.</p>
         </div>
@@ -188,287 +152,19 @@
 </div>
 <!--  End IMPLEMENTIERUNG -->
 
-
 <script src="js/jquery-3.4.0.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/build/sigma.min.js"></script>
-<script src="js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/supervisor.js"></script>
-<script src="js/sigma.js-1.2.1/plugins/sigma.layout.forceAtlas2/worker.js"></script>
 <script src="js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script language="javascript" type="text/javascript">
     //<![CDATA[
-    var puzzle;
-    var selectedTile;
-    var matrix = [];
     $(document).ready(function () {
-// ++++++++++++++++++++++++++ End Change the Color if the link is clicked ++++++++++++++++++++++++++++++++++++++++++//
-//         init();
-//         $("#newGame").click(function () {
-//             init();
-//         });
-
-        $("#grid").fadeIn(900);
-
-        // $("#myOwn").click(function () {
-        //     initMyOwn();
-        // });
-
-        $("#graphAnzeigen").click(function () {
-            // myFunction();
-            graphzeigen();
-        });
 
         $('.submitAlgorithm').click(function () {
             submitSelectedAlgorithms();
         });
-
-        // $("#finished").click(function () {
-        //     readTableToSend();
-        //     sendArrayToJava();
-        // });
-        console.log("Salam i am from Ready jQuery: ", matrix);
     });
-
-    function graphzeigen() {
-        $.ajax({
-            contentType: "application/json",
-            type: "GET",
-            url: "/graphZeigen",
-            success: function (data) {
-                myFunction();
-
-                if (isJson(data)) {
-                    // Initialise sigma:
-                    let myObject = JSON.parse(data);
-                    console.log("my Object: " + myObject);
-                    var edge = myObject.e;
-                    console.log("MY edges: " + edge);
-
-                    s = new sigma(
-                        {
-                            renderer: {
-                                container: document.getElementById("sigmaContainer"),
-                                type: 'canvas'
-                            },
-                            settings: {
-                                edgeLabelSize: 'proportional',
-                                minArrowSize: 10
-                            }
-                        }
-                    );
-
-                    var graph = {
-                        nodes: [],
-                        edges: []
-                    };
-                    console.log("Vertices: " + myObject.V);
-                    for (i = 0; i < myObject.V; i++) {
-                        graph.nodes.push({
-                            id: i,
-                            label: 'Node ' + i,
-                            x: Math.random(),
-                            y: Math.random(),
-                            size: 1,
-                            color: '#ee59cb'
-                        });
-                    }
-                    //
-                    var idd = 0;
-                    for (j = 0; j < edge.length; j++) {
-                        for (i = 0; i < edge[j].length; i++) {
-                            graph.edges.push({
-                                id: idd,
-                                // label: 'Edge ' +idd,
-                                source: '' + j,
-                                target: '' + edge[j][i],
-                                color: '#808080',
-                                type: 'curvedArrow',
-                            });
-                            // console.log(edge[j][i]);
-                            ++idd;
-                        }
-                    }
-                    console.log(graph.edges);
-                    // // load the graph
-                    s.graph.read(graph);
-                    // draw the graph
-                    s.refresh();
-                    // // launch force-atlas for 5sec
-                    // s.startForceAtlas2();
-                    // window.setTimeout(function () {
-                    //     s.killForceAtlas2()
-                    // }, 100);
-                } else
-                    document.getElementById("showmyjson").innerHTML = "<h3>" + data + "!" + "</h3>";
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.log('error while post to java');
-            }
-        });
-    }
-
-    // function init() {
-    //     puzzle = new generateSudoku();
-    //
-    //     for (var i = 0; i < 9; i++) {
-    //         for (var j = 0; j < 9; j++) {
-    //             var tile = document.getElementById("t" + i + "x" + j);
-    //             if (puzzle.getTileNumber(i, j) === 0) {
-    //                 tile.className = "cell";
-    //                 tile.value = "";
-    //                 tile.style.backgroundColor = "#FFFFFF";
-    //                 tile.disabled = true;
-    //                 tile.onclick = tOnClick;
-    //             } else {
-    //                 tile.style.backgroundColor = "#33FFD5";
-    //                 tile.className = "cell";
-    //                 tile.value = puzzle.getTileNumber(i, j);
-    //                 tile.disabled = true;
-    //             }
-    //         }
-    //     }
-    // }
-
-    // function ownInput() {
-    //     puzzle = new generateMyOwn();
-    //
-    //     for (var i = 0; i < 9; i++) {
-    //         for (var j = 0; j < 9; j++) {
-    //             var tile = document.getElementById("t" + i + "x" + j);
-    //             if (puzzle.getTileNumber(i, j) === 0) {
-    //                 tile.className = "emptyCell";
-    //                 tile.value = "";
-    //                 tile.style.backgroundColor = "#FFFFFF";
-    //                 tile.disabled = false;
-    //                 tile.onclick = tOnClick;
-    //             } else {
-    //                 tile.className = "cell";
-    //                 tile.value = puzzle.getTileNumber(i, j);
-    //             }
-    //         }
-    //     }
-    // }
-
-    /*
-    * This method should serve to read and fill the Matrix with the inputed value from HTML
-    */
-    // function readTableToSend() {
-    //     for (let i = 0; i < 9; i++) {
-    //         matrix[i] = [];
-    //         for (let j = 0; j < 9; j++) {
-    //             let tile = document.getElementById("t" + i + "x" + j);
-    //             if (tile === "") {
-    //                 matrix[i][j] = 0;
-    //             } else {
-    //                 matrix[i][j] = tile.value;
-    //             }
-    //         }
-    //     }
-    // }
-
-    /*
-     * This Method generates a table which read from java and print the results in Browser
-     */
-    // function printSudoku(array) {
-    //     let count = 0;
-    //     for (let i = 0; i < 9; i++) {
-    //         for (let j = 0; j < 9; j++) {
-    //             let tile = document.getElementById("t" + i + "x" + j);
-    //             if (tile.value === "") {
-    //
-    //                 tile.style.backgroundColor = "#FFFFFF";
-    //                 tile.disabled = true;
-    //                 tile.value = array[count];
-    //             } else {
-    //                 tile.style.backgroundColor = "#33ffd5";
-    //                 tile.disabled = true;
-    //             }
-    //             count++;
-    //         }
-    //     }
-    // }
-
-    // function tOnClick() {
-    //     if (selectedTile == null) {
-    //         selectedTile = this;
-    //         selectedTile.className = "emptyCell selected";
-    //     } else {
-    //         deselect();
-    //     }
-    // }
-
-
-    // function deselect() {
-    //     selectedTile.className = "emptyCell";
-    //     selectedTile = null;
-    // }
-
-    // function initMyOwn() {
-    //     ownInput();
-    // }
-
-    /*
-    * This method convert a Matrix, which is self entered or generated with the Button "give me another" to Array in
-    * order to send it to the java server to solve the Problem Sudoku.
-    */
-    // function convertMarixToArray(matrix) {
-    //     let myArray = Array(81);
-    //     let count = 0;
-    //     for (let i = 0; i < 9; i++) {
-    //         for (let j = 0; j < 9; j++) {
-    //             myArray[count] = matrix[i][j];
-    //             count++;
-    //         }
-    //     }
-    //     return myArray;
-    // }
-
-    /*
-    * This Methode send an array to java using ajax and get the response as Array.
-    * This response will be printed using Method generate_Table()
-    */
-    // function sendArrayToJava() {
-    //     // console.log("i am the matrix " + matrix);
-    //     if (isValid(matrix)) {
-    //         let dataArrayToSend = convertMarixToArray(matrix);
-    //
-    //         if (!isSolved(dataArrayToSend)) {
-    //             $.ajax({
-    //                 contentType: "application/json",
-    //                 type: "POST",
-    //                 data: JSON.stringify(dataArrayToSend),
-    //                 url: "/appUrl",
-    //                 success: function (data) {
-    //                     printSudoku(data)
-    //                 },
-    //                 error: function (jqXHR, textStatus, errorThrown) {
-    //                     console.log('error while post');
-    //                 }
-    //             });
-    //         }
-    //     } else {
-    //         Swal.fire({
-    //             title: "Ein­ga­be­feh­ler",
-    //             text: "Halten Sie bitte die Regeln des Sudoku Spiels ein!" +
-    //                 "Es darf nur die Zahlen 1 bis 9 eingegeben werden",
-    //             type: "warning"
-    //         })
-    //     }
-    // }
-
-    // function isSolved(dataArrayToSend) {
-    //     for (var i = 0; i < 81; i++) {
-    //         if (dataArrayToSend[i] === '') {
-    //             return false;
-    //         }
-    //     }
-    //     return true;
-    // }
-
     //]]>
 </script>
-
 </body>
 </html>
