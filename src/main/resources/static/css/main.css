@@ -21,7 +21,7 @@ Theme Name: Ousama
 }
 
 .navbar-nav .nav-link {
-    font-size: 13px;
+    font-size: 16px;
     text-transform: uppercase;
     margin-left: 20px;
     color: #08526d;
@@ -99,9 +99,9 @@ h3 {
     background-position: center;
     background-attachment: fixed;
 }
-
+/* ---------------- HOME PAGE ---------------------*/
 .slider .carousel-one {
-    background-image: url('../images/p6.jpeg');
+    background-image: url('../images/p3.jpeg');
 }
 
 .slider .carousel-two {
